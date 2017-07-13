@@ -1,0 +1,414 @@
+@import "./public/reset.scss";
+@import "./public/pcStyle.scss";
+// 开发pc时请使用 pcStyle.scss 开发移动站点时请使用index.scss
+
+// 移动端
+// font_dpr rem
+
+// pc端
+// font_fn bg_fn
+.clear{
+  clear: both;
+}
+
+//start
+.app{
+  .app_header{
+    @include bg_fn(url("../img/shouye-banner.jpg"), no-repeat, center, cover);
+    height: 750px;
+    .app_header_con{
+      width: 1200px;
+      margin: 0 auto;
+      .app_header_con_nav{
+        padding-top: 20px;
+        overflow: hidden;
+        .app_header_con_nav_logo{
+          float: left;
+          overflow: hidden;
+          padding-left: 20px;
+          .app_header_con_nav_logo_img{
+            display: block;
+            width: 320px;
+            height: 40px;
+            float: left;
+            @include bg_fn(url("../img/logo-nav.png"), no-repeat, center, cover);
+          }
+        }
+        .app_header_con_nav_list{
+          float: right;
+          .app_header_con_nav_list_ul{
+            overflow: hidden;
+            .app_header_con_nav_list_ul_li{
+              float: left;
+              padding: 0 20px;
+              .app_header_con_nav_list_ul_li_item{
+                display: block;
+                @include font_link_text();
+                line-height: 40px;
+              }
+              &.app_header_con_nav_list_ul_liLogin{
+                overflow: hidden;
+                .app_header_con_nav_list_ul_li_item{
+                  padding: 0;
+                  display: block;
+                  float: left;
+                  &.left{
+                    margin-right: 10px;
+                  }
+                  &.right{
+                    margin-left: 10px;
+                  }
+                  &.yh{
+                    width: 19px;
+                    height: 18px;
+                    margin-left: 20px;
+                    margin-top: 11px;
+                    @include bg_fn(url("../img/nav-yonghu.png"), no-repeat, center, cover);
+                  }
+                }
+                .app_header_con_nav_list_ul_li_item_sp{
+                  display: block;
+                  float: left;
+                  padding-top: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .app_header_con_title{
+        padding-top: 200px;
+        .app_header_con_title_text0{
+          text-align: center;
+          @include font_main_head();
+          line-height: 2;
+        }
+        .app_header_con_title_text1{
+          text-align: center;
+          @include font_sub_head();
+          line-height: 2;
+        }
+      }
+    }
+  }
+  .app_body0{
+    height: 658px;
+    background: #2a2f33;
+    .app_body0_con{
+      width: 1200px;
+      height: 100%;
+      padding-top: 59px;
+      margin: 0 auto;
+      .app_body0_con_title{
+        @include font_small_head();
+        text-indent: 150px;
+      }
+      .app_body0_con_left{
+        float: left;
+        width: 746px;
+        height: 566px;
+        margin-top: 46px;
+        @include bg_fn(url("../img/iPhone-5S.png"), no-repeat, center, cover);
+      }
+      .app_body0_con_right{
+        float: right;
+        // width: 746px;
+        height: 566px;
+        margin-right: 140px;
+        margin-top: 80px;
+        .app_body0_con_right_list{
+          .app_body0_con_right_list_item{
+            padding-top: 20px;
+            overflow: hidden;
+            .app_body0_con_right_list_item_logo{
+              float: left;
+              width: 22px;
+              height: 22px;
+              margin-top: 5px;
+              @include bg_fn(url("../img/fuwu.png"), no-repeat, center, cover);
+              &.tyrw{
+                width: 25px;
+                height: 25px;
+                @include bg_fn(url("../img/tsfwtu.png"), no-repeat, center, cover);
+              }
+              &.wzdfwtx{
+                width: 21px;
+                height: 31px;
+                @include bg_fn(url("../img/shengji.png"), no-repeat, center, cover);
+              }
+              &.ksxy{
+                width: 19px;
+                height: 27px;
+                @include bg_fn(url("../img/shandian.png"), no-repeat, center, cover);
+              }
+            }
+            .app_body0_con_right_list_item_text{
+              float: left;
+              padding-left: 20px;
+              .app_body0_con_right_list_item_text_title{
+                @include font_small_head();
+                font-size: 18px;
+              }
+              .app_body0_con_right_list_item_text_text{
+                padding-top: 10px;
+                @include font_small_head();
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .app_body1{
+    height: 1300px;
+    background: #fff;
+    .app_body1_con{
+      width: 1200px;
+      padding-top: 160px;
+      margin: 0 auto;
+      .app_body1_con_title{
+        @include font_sub_head();
+        color: #000;
+        text-align: center;
+      }
+      .app_body1_con_titleSub{
+        padding-top: 20px;
+        @include font_sub_head();
+        color: #aaaaaa;
+        font-size: 16px;
+        text-align: center;
+      }
+      .app_body1_con_box{
+        position: relative;
+        padding-top: 100px;
+        .swiper-container{
+          width: 1100px;
+          height: 394px;
+          .swiper-wrapper{
+            .swiper-slide{
+              @include bg_fn(url("../img/sdfdsf_03.png"), no-repeat, center, cover);
+              &.slide1{
+                @include bg_fn(url("../img/sdfdsf_03.png"), no-repeat, center, cover);
+              }
+            }
+          }
+        }
+        .swiper-pagination{
+          bottom: 20px;
+          left: 50%;
+          margin-left: -24px;
+          .swiper-pagination-bullet{
+            margin: 0 4px;
+          }
+        }
+        .jt-next{
+          width: 25px;
+          height: 39px;
+          position: absolute;
+          top: 50%;
+          margin-top: -20px;
+          right: -50px;
+          z-index: 999;
+          @include bg_fn( url("../img/jt-next.png"), no-repeat, center, cover);
+          cursor: pointer;
+          opacity: .5;
+          &:hover{
+            opacity: 1;
+          }
+        }
+        .jt-prev{
+          width: 25px;
+          height: 39px;
+          position: absolute;
+          top: 50%;
+          margin-top: -20px;
+          left: -50px;
+          z-index: 999;
+          @include bg_fn( url("../img/jt-prev.png"), no-repeat, center, cover);
+          cursor: pointer;
+          opacity: .5;
+          &:hover{
+            opacity: 1;
+          }
+        }
+        .swiper-xian{
+          padding-top: 50px;
+          width: 1100px;
+          margin: 0 auto;
+          border-bottom: 1px solid #ececec;
+        }
+      }
+      .app_body1_cfzl{
+        padding-top: 100px;
+        @include font_sub_head();
+        text-align: center;
+        color: #555555;
+      }
+      .app_body1_cfzlSub{
+        padding-top: 10px;
+        @include font_link_text();
+        color: #9f9f9f;
+        text-align: center;
+      }
+      .app_body1_zcButtom{
+        display: block;
+        @include font_text();
+        width: 115px;
+        height: 40px;
+        margin: 40px auto 0;
+        background: #37b396;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 40px;
+      }
+      .app_body1_cdzl{
+        .app_body1_cdzl_list{
+          overflow: hidden;
+          margin: 50px auto 0;
+          width: 700px;
+          .app_body1_cdzl_list_item{
+            float: left;
+            width: 220px;
+            margin-left: 20px;
+            &.left{
+              margin-left: 0px;
+            }
+            .app_body1_cdzl_list_item_img{
+              .app_body1_cdzl_list_item_img_box{
+                width: 20px;
+                height: 20px;
+                margin: 10px auto;
+                @include bg_fn( url("../img/dh.png"), no-repeat, center, cover);
+                &.kf{
+                  width: 25px;
+                  height: 24px;
+                  @include bg_fn( url("../img/kf.png"), no-repeat, center, cover);
+                }
+                &.sw{
+                  width: 20px;
+                  height: 15px;
+                  margin-top: 20px;
+                  @include bg_fn( url("../img/sw.png"), no-repeat, center, cover);
+                }
+              }
+            }
+            .app_body1_cdzl_list_item_title{
+              @include font_text();
+              color: #9f9f9f;
+              text-align: center;
+            }
+            .app_body1_cdzl_list_item_tel{
+              text-decoration: none;
+              display: block;
+              @include font_help_text();
+              text-align: center;
+              &.kf{
+                text-decoration: underline;
+                color: #9f9f9f;
+              }
+              &.sw{
+                color: #9f9f9f;
+              }
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .app_body2{
+    height: 380px;
+    background: #f9f9f9;
+    .app_body2_con{
+      width: 1200px;
+      padding-top: 10px;
+      margin: 0 auto;
+      .app_body2_con_ul{
+        width: 1000px;
+        margin: 0 auto;
+        padding: 30px 0;
+        overflow: hidden;
+        border-bottom: 1px solid #ececec;
+        .app_body2_con_ul_li{
+          float: left;
+          overflow: hidden;
+          margin-left: 40px;
+          &.text{
+            @include font_disabled_text();
+            margin-top: 8px;
+            margin-left: 0px;
+          }
+          .app_body2_con_ul_li_img{
+            float: left;
+            width: 46px;
+            height: 46px;
+            @include bg_fn( url("../img/webwxgetmsgimg.png"), no-repeat, center, cover);
+          }
+          .app_body2_con_ul_li_text{
+            display: block;
+            @include font_disabled_text();
+            float: left;
+            margin-left: 10px;
+            margin-top: 8px;
+          }
+        }
+      }
+      .app_body2_con_db{
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 10px;
+        overflow: hidden;
+        .app_body2_con_db_left{
+          float: left;
+          overflow: hidden;
+          .app_body2_con_db_left_logo{
+            float: left;
+            width: 46px;
+            height: 46px;
+            @include bg_fn( url("../img/logo-1.png"), no-repeat, center, cover);
+            margin-top: 84px;
+          }
+          .app_body2_con_db_left_text{
+            float: left;
+            @include font_help_text();
+            color: #999999;
+            margin-left: 10px;
+            margin-top: 86px;
+          }
+          .app_body2_con_db_left_erweima{
+            float: left;
+            width: 127px;
+            height: 127px;
+            @include bg_fn( url("../img/qrcode_for_gh_15b803beb30c_1280.png"), no-repeat, center, cover);
+            margin-top: 50px;
+            margin-left: 60px;
+          }
+        }
+        .app_body2_con_db_right{
+          float: left;
+          margin-top: 60px;
+          margin-left: 100px;
+          .app_body2_con_db_right_list{
+            overflow: hidden;
+            .app_body2_con_db_right_list_item{
+              float: left;
+              margin-left: 120px;
+              .app_body2_con_db_right_list_item_a{
+                display: block;
+                @include font_link_text();
+                font-size: 12px;
+                line-height: 2;
+                &:hover{
+                  text-decoration:underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
