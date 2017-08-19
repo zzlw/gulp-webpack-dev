@@ -95,20 +95,6 @@ hr {
 html {
   overflow-y: scroll; }
 
-@font-face {
-  font-family: 'iconfontyyy';
-  /* project id 284616 */
-  src: url("//at.alicdn.com/t/font_eu32mjbfq5154s4i.eot");
-  src: url("//at.alicdn.com/t/font_eu32mjbfq5154s4i.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_eu32mjbfq5154s4i.woff") format("woff"), url("//at.alicdn.com/t/font_eu32mjbfq5154s4i.ttf") format("truetype"), url("//at.alicdn.com/t/font_eu32mjbfq5154s4i.svg#iconfont") format("svg"); }
-
-.iconfontyyy {
-  font-family: "iconfontyyy" !important;
-  font-size: 5px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 1px;
-  -moz-osx-font-smoothing: grayscale; }
-
 .clear {
   clear: both; }
 
@@ -146,11 +132,17 @@ html {
             padding: 0 20px; }
             .app .app_header .app_header_con .app_header_con_nav .app_header_con_nav_list .app_header_con_nav_list_ul .app_header_con_nav_list_ul_li .app_header_con_nav_list_ul_li_item {
               display: block;
-              font-size: 14px;
-              font-weight: narmal;
-              color: #222222;
+              font-size: 12px;
+              font-weight: 400;
+              color: #f00;
               line-height: 1.5;
               line-height: 40px; }
+              [data-dpr="2"] .app .app_header .app_header_con .app_header_con_nav .app_header_con_nav_list .app_header_con_nav_list_ul .app_header_con_nav_list_ul_li .app_header_con_nav_list_ul_li_item {
+                font-size: 24px; }
+              [data-dpr="3"] .app .app_header .app_header_con .app_header_con_nav .app_header_con_nav_list .app_header_con_nav_list_ul .app_header_con_nav_list_ul_li .app_header_con_nav_list_ul_li_item {
+                font-size: 36px; }
+              [data-dpr="3.5"] .app .app_header .app_header_con .app_header_con_nav .app_header_con_nav_list .app_header_con_nav_list_ul .app_header_con_nav_list_ul_li .app_header_con_nav_list_ul_li_item {
+                font-size: 42px; }
             .app .app_header .app_header_con .app_header_con_nav .app_header_con_nav_list .app_header_con_nav_list_ul .app_header_con_nav_list_ul_li.app_header_con_nav_list_ul_liLogin {
               overflow: hidden; }
               .app .app_header .app_header_con .app_header_con_nav .app_header_con_nav_list .app_header_con_nav_list_ul .app_header_con_nav_list_ul_li.app_header_con_nav_list_ul_liLogin .app_header_con_nav_list_ul_li_item {
@@ -178,18 +170,24 @@ html {
       padding-top: 200px; }
       .app .app_header .app_header_con .app_header_con_title .app_header_con_title_text0 {
         text-align: center;
-        font-size: 48px;
-        font-weight: narmal;
-        color: #000;
+        font-size: 0.5625rem;
+        font-weight: 400;
+        color: #f00;
         line-height: 1.5;
         line-height: 2; }
       .app .app_header .app_header_con .app_header_con_title .app_header_con_title_text1 {
         text-align: center;
-        font-size: 30px;
-        font-weight: narmal;
-        color: #4a4a4a;
+        font-size: 20px;
+        font-weight: 400;
+        color: #f00;
         line-height: 1.5;
         line-height: 2; }
+        [data-dpr="2"] .app .app_header .app_header_con .app_header_con_title .app_header_con_title_text1 {
+          font-size: 40px; }
+        [data-dpr="3"] .app .app_header .app_header_con .app_header_con_title .app_header_con_title_text1 {
+          font-size: 60px; }
+        [data-dpr="3.5"] .app .app_header .app_header_con .app_header_con_title .app_header_con_title_text1 {
+          font-size: 70px; }
 
 .app .app_body0 {
   height: 658px;
@@ -200,11 +198,17 @@ html {
     padding-top: 59px;
     margin: 0 auto; }
     .app .app_body0 .app_body0_con .app_body0_con_title {
-      font-size: 36px;
-      font-weight: narmal;
-      color: #fafafa;
+      font-size: 20px;
+      font-weight: 400;
+      color: #f00;
       line-height: 1.5;
       text-indent: 150px; }
+      [data-dpr="2"] .app .app_body0 .app_body0_con .app_body0_con_title {
+        font-size: 40px; }
+      [data-dpr="3"] .app .app_body0 .app_body0_con .app_body0_con_title {
+        font-size: 60px; }
+      [data-dpr="3.5"] .app .app_body0 .app_body0_con .app_body0_con_title {
+        font-size: 70px; }
     .app .app_body0 .app_body0_con .app_body0_con_left {
       float: left;
       width: 746px;
@@ -256,18 +260,30 @@ html {
           float: left;
           padding-left: 20px; }
           .app .app_body0 .app_body0_con .app_body0_con_right .app_body0_con_right_list .app_body0_con_right_list_item .app_body0_con_right_list_item_text .app_body0_con_right_list_item_text_title {
-            font-size: 36px;
-            font-weight: narmal;
-            color: #fafafa;
+            font-size: 20px;
+            font-weight: 400;
+            color: #f00;
             line-height: 1.5;
             font-size: 18px; }
+            [data-dpr="2"] .app .app_body0 .app_body0_con .app_body0_con_right .app_body0_con_right_list .app_body0_con_right_list_item .app_body0_con_right_list_item_text .app_body0_con_right_list_item_text_title {
+              font-size: 40px; }
+            [data-dpr="3"] .app .app_body0 .app_body0_con .app_body0_con_right .app_body0_con_right_list .app_body0_con_right_list_item .app_body0_con_right_list_item_text .app_body0_con_right_list_item_text_title {
+              font-size: 60px; }
+            [data-dpr="3.5"] .app .app_body0 .app_body0_con .app_body0_con_right .app_body0_con_right_list .app_body0_con_right_list_item .app_body0_con_right_list_item_text .app_body0_con_right_list_item_text_title {
+              font-size: 70px; }
           .app .app_body0 .app_body0_con .app_body0_con_right .app_body0_con_right_list .app_body0_con_right_list_item .app_body0_con_right_list_item_text .app_body0_con_right_list_item_text_text {
             padding-top: 10px;
-            font-size: 36px;
-            font-weight: narmal;
-            color: #fafafa;
+            font-size: 20px;
+            font-weight: 400;
+            color: #f00;
             line-height: 1.5;
             font-size: 14px; }
+            [data-dpr="2"] .app .app_body0 .app_body0_con .app_body0_con_right .app_body0_con_right_list .app_body0_con_right_list_item .app_body0_con_right_list_item_text .app_body0_con_right_list_item_text_text {
+              font-size: 40px; }
+            [data-dpr="3"] .app .app_body0 .app_body0_con .app_body0_con_right .app_body0_con_right_list .app_body0_con_right_list_item .app_body0_con_right_list_item_text .app_body0_con_right_list_item_text_text {
+              font-size: 60px; }
+            [data-dpr="3.5"] .app .app_body0 .app_body0_con .app_body0_con_right .app_body0_con_right_list .app_body0_con_right_list_item .app_body0_con_right_list_item_text .app_body0_con_right_list_item_text_text {
+              font-size: 70px; }
 
 .app .app_body1 {
   height: 1300px;
@@ -277,21 +293,33 @@ html {
     padding-top: 160px;
     margin: 0 auto; }
     .app .app_body1 .app_body1_con .app_body1_con_title {
-      font-size: 30px;
-      font-weight: narmal;
-      color: #4a4a4a;
+      font-size: 20px;
+      font-weight: 400;
+      color: #f00;
       line-height: 1.5;
       color: #000;
       text-align: center; }
+      [data-dpr="2"] .app .app_body1 .app_body1_con .app_body1_con_title {
+        font-size: 40px; }
+      [data-dpr="3"] .app .app_body1 .app_body1_con .app_body1_con_title {
+        font-size: 60px; }
+      [data-dpr="3.5"] .app .app_body1 .app_body1_con .app_body1_con_title {
+        font-size: 70px; }
     .app .app_body1 .app_body1_con .app_body1_con_titleSub {
       padding-top: 20px;
-      font-size: 30px;
-      font-weight: narmal;
-      color: #4a4a4a;
+      font-size: 20px;
+      font-weight: 400;
+      color: #f00;
       line-height: 1.5;
       color: #aaaaaa;
       font-size: 16px;
       text-align: center; }
+      [data-dpr="2"] .app .app_body1 .app_body1_con .app_body1_con_titleSub {
+        font-size: 40px; }
+      [data-dpr="3"] .app .app_body1 .app_body1_con .app_body1_con_titleSub {
+        font-size: 60px; }
+      [data-dpr="3.5"] .app .app_body1 .app_body1_con .app_body1_con_titleSub {
+        font-size: 70px; }
     .app .app_body1 .app_body1_con .app_body1_con_box {
       position: relative;
       padding-top: 100px; }
@@ -353,25 +381,37 @@ html {
         border-bottom: 1px solid #ececec; }
     .app .app_body1 .app_body1_con .app_body1_cfzl {
       padding-top: 100px;
-      font-size: 30px;
-      font-weight: narmal;
-      color: #4a4a4a;
+      font-size: 20px;
+      font-weight: 400;
+      color: #f00;
       line-height: 1.5;
       text-align: center;
       color: #555555; }
+      [data-dpr="2"] .app .app_body1 .app_body1_con .app_body1_cfzl {
+        font-size: 40px; }
+      [data-dpr="3"] .app .app_body1 .app_body1_con .app_body1_cfzl {
+        font-size: 60px; }
+      [data-dpr="3.5"] .app .app_body1 .app_body1_con .app_body1_cfzl {
+        font-size: 70px; }
     .app .app_body1 .app_body1_con .app_body1_cfzlSub {
       padding-top: 10px;
-      font-size: 14px;
-      font-weight: narmal;
-      color: #222222;
+      font-size: 12px;
+      font-weight: 400;
+      color: #f00;
       line-height: 1.5;
       color: #9f9f9f;
       text-align: center; }
+      [data-dpr="2"] .app .app_body1 .app_body1_con .app_body1_cfzlSub {
+        font-size: 24px; }
+      [data-dpr="3"] .app .app_body1 .app_body1_con .app_body1_cfzlSub {
+        font-size: 36px; }
+      [data-dpr="3.5"] .app .app_body1 .app_body1_con .app_body1_cfzlSub {
+        font-size: 42px; }
     .app .app_body1 .app_body1_con .app_body1_zcButtom {
       display: block;
-      font-size: 16px;
-      font-weight: narmal;
-      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+      color: #f00;
       line-height: 1.5;
       width: 115px;
       height: 40px;
@@ -380,6 +420,12 @@ html {
       border-radius: 5px;
       text-align: center;
       line-height: 40px; }
+      [data-dpr="2"] .app .app_body1 .app_body1_con .app_body1_zcButtom {
+        font-size: 24px; }
+      [data-dpr="3"] .app .app_body1 .app_body1_con .app_body1_zcButtom {
+        font-size: 36px; }
+      [data-dpr="3.5"] .app .app_body1 .app_body1_con .app_body1_zcButtom {
+        font-size: 42px; }
     .app .app_body1 .app_body1_con .app_body1_cdzl .app_body1_cdzl_list {
       overflow: hidden;
       margin: 50px auto 0;
@@ -414,20 +460,32 @@ html {
             background-position: center;
             background-size: cover; }
         .app .app_body1 .app_body1_con .app_body1_cdzl .app_body1_cdzl_list .app_body1_cdzl_list_item .app_body1_cdzl_list_item_title {
-          font-size: 16px;
-          font-weight: narmal;
-          color: #fff;
+          font-size: 12px;
+          font-weight: 400;
+          color: #f00;
           line-height: 1.5;
           color: #9f9f9f;
           text-align: center; }
+          [data-dpr="2"] .app .app_body1 .app_body1_con .app_body1_cdzl .app_body1_cdzl_list .app_body1_cdzl_list_item .app_body1_cdzl_list_item_title {
+            font-size: 24px; }
+          [data-dpr="3"] .app .app_body1 .app_body1_con .app_body1_cdzl .app_body1_cdzl_list .app_body1_cdzl_list_item .app_body1_cdzl_list_item_title {
+            font-size: 36px; }
+          [data-dpr="3.5"] .app .app_body1 .app_body1_con .app_body1_cdzl .app_body1_cdzl_list .app_body1_cdzl_list_item .app_body1_cdzl_list_item_title {
+            font-size: 42px; }
         .app .app_body1 .app_body1_con .app_body1_cdzl .app_body1_cdzl_list .app_body1_cdzl_list_item .app_body1_cdzl_list_item_tel {
           text-decoration: none;
           display: block;
           font-size: 12px;
-          font-weight: narmal;
-          color: #37b396;
+          font-weight: 400;
+          color: #f00;
           line-height: 1.5;
           text-align: center; }
+          [data-dpr="2"] .app .app_body1 .app_body1_con .app_body1_cdzl .app_body1_cdzl_list .app_body1_cdzl_list_item .app_body1_cdzl_list_item_tel {
+            font-size: 24px; }
+          [data-dpr="3"] .app .app_body1 .app_body1_con .app_body1_cdzl .app_body1_cdzl_list .app_body1_cdzl_list_item .app_body1_cdzl_list_item_tel {
+            font-size: 36px; }
+          [data-dpr="3.5"] .app .app_body1 .app_body1_con .app_body1_cdzl .app_body1_cdzl_list .app_body1_cdzl_list_item .app_body1_cdzl_list_item_tel {
+            font-size: 42px; }
           .app .app_body1 .app_body1_con .app_body1_cdzl .app_body1_cdzl_list .app_body1_cdzl_list_item .app_body1_cdzl_list_item_tel.kf {
             text-decoration: underline;
             color: #9f9f9f; }
@@ -454,12 +512,18 @@ html {
         overflow: hidden;
         margin-left: 40px; }
         .app .app_body2 .app_body2_con .app_body2_con_ul .app_body2_con_ul_li.text {
-          font-size: 18px;
-          font-weight: narmal;
-          color: #999;
+          font-size: 12px;
+          font-weight: 400;
+          color: #f00;
           line-height: 1.5;
           margin-top: 8px;
           margin-left: 0px; }
+          [data-dpr="2"] .app .app_body2 .app_body2_con .app_body2_con_ul .app_body2_con_ul_li.text {
+            font-size: 24px; }
+          [data-dpr="3"] .app .app_body2 .app_body2_con .app_body2_con_ul .app_body2_con_ul_li.text {
+            font-size: 36px; }
+          [data-dpr="3.5"] .app .app_body2 .app_body2_con .app_body2_con_ul .app_body2_con_ul_li.text {
+            font-size: 42px; }
         .app .app_body2 .app_body2_con .app_body2_con_ul .app_body2_con_ul_li .app_body2_con_ul_li_img {
           float: left;
           width: 46px;
@@ -470,13 +534,19 @@ html {
           background-size: cover; }
         .app .app_body2 .app_body2_con .app_body2_con_ul .app_body2_con_ul_li .app_body2_con_ul_li_text {
           display: block;
-          font-size: 18px;
-          font-weight: narmal;
-          color: #999;
+          font-size: 12px;
+          font-weight: 400;
+          color: #f00;
           line-height: 1.5;
           float: left;
           margin-left: 10px;
           margin-top: 8px; }
+          [data-dpr="2"] .app .app_body2 .app_body2_con .app_body2_con_ul .app_body2_con_ul_li .app_body2_con_ul_li_text {
+            font-size: 24px; }
+          [data-dpr="3"] .app .app_body2 .app_body2_con .app_body2_con_ul .app_body2_con_ul_li .app_body2_con_ul_li_text {
+            font-size: 36px; }
+          [data-dpr="3.5"] .app .app_body2 .app_body2_con .app_body2_con_ul .app_body2_con_ul_li .app_body2_con_ul_li_text {
+            font-size: 42px; }
     .app .app_body2 .app_body2_con .app_body2_con_db {
       width: 1000px;
       margin: 0 auto;
@@ -497,12 +567,18 @@ html {
         .app .app_body2 .app_body2_con .app_body2_con_db .app_body2_con_db_left .app_body2_con_db_left_text {
           float: left;
           font-size: 12px;
-          font-weight: narmal;
-          color: #37b396;
+          font-weight: 400;
+          color: #f00;
           line-height: 1.5;
           color: #999999;
           margin-left: 10px;
           margin-top: 86px; }
+          [data-dpr="2"] .app .app_body2 .app_body2_con .app_body2_con_db .app_body2_con_db_left .app_body2_con_db_left_text {
+            font-size: 24px; }
+          [data-dpr="3"] .app .app_body2 .app_body2_con .app_body2_con_db .app_body2_con_db_left .app_body2_con_db_left_text {
+            font-size: 36px; }
+          [data-dpr="3.5"] .app .app_body2 .app_body2_con .app_body2_con_db .app_body2_con_db_left .app_body2_con_db_left_text {
+            font-size: 42px; }
         .app .app_body2 .app_body2_con .app_body2_con_db .app_body2_con_db_left .app_body2_con_db_left_erweima {
           float: left;
           width: 127px;
@@ -524,11 +600,17 @@ html {
             margin-left: 120px; }
             .app .app_body2 .app_body2_con .app_body2_con_db .app_body2_con_db_right .app_body2_con_db_right_list .app_body2_con_db_right_list_item .app_body2_con_db_right_list_item_a {
               display: block;
-              font-size: 14px;
-              font-weight: narmal;
-              color: #222222;
+              font-size: 12px;
+              font-weight: 400;
+              color: #f00;
               line-height: 1.5;
               font-size: 12px;
               line-height: 2; }
+              [data-dpr="2"] .app .app_body2 .app_body2_con .app_body2_con_db .app_body2_con_db_right .app_body2_con_db_right_list .app_body2_con_db_right_list_item .app_body2_con_db_right_list_item_a {
+                font-size: 24px; }
+              [data-dpr="3"] .app .app_body2 .app_body2_con .app_body2_con_db .app_body2_con_db_right .app_body2_con_db_right_list .app_body2_con_db_right_list_item .app_body2_con_db_right_list_item_a {
+                font-size: 36px; }
+              [data-dpr="3.5"] .app .app_body2 .app_body2_con .app_body2_con_db .app_body2_con_db_right .app_body2_con_db_right_list .app_body2_con_db_right_list_item .app_body2_con_db_right_list_item_a {
+                font-size: 42px; }
               .app .app_body2 .app_body2_con .app_body2_con_db .app_body2_con_db_right .app_body2_con_db_right_list .app_body2_con_db_right_list_item .app_body2_con_db_right_list_item_a:hover {
                 text-decoration: underline; }
