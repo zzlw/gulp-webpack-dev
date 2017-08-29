@@ -1,5 +1,5 @@
 @import "./public/reset.scss";
-@import "./public/style.scss";
+@import "./public/pcStyle.scss";
 // 开发pc时请使用 pcStyle.scss 开发移动站点时请使用index.scss
 
 // 移动端
@@ -17,65 +17,8 @@
     @include bg_fn(url("../img/shouye-banner.jpg"), no-repeat, center, cover);
     height: 750px;
     .app_header_con{
-      width: 1200px;
+      width: 100%;
       margin: 0 auto;
-      .app_header_con_nav{
-        padding-top: 20px;
-        overflow: hidden;
-        .app_header_con_nav_logo{
-          float: left;
-          overflow: hidden;
-          padding-left: 20px;
-          .app_header_con_nav_logo_img{
-            display: block;
-            width: 320px;
-            height: 40px;
-            float: left;
-            @include bg_fn(url("../img/logo-nav.png"), no-repeat, center, cover);
-          }
-        }
-        .app_header_con_nav_list{
-          float: right;
-          .app_header_con_nav_list_ul{
-            overflow: hidden;
-            .app_header_con_nav_list_ul_li{
-              float: left;
-              padding: 0 20px;
-              .app_header_con_nav_list_ul_li_item{
-                display: block;
-                @include font_link_text();
-                line-height: 40px;
-              }
-              &.app_header_con_nav_list_ul_liLogin{
-                overflow: hidden;
-                .app_header_con_nav_list_ul_li_item{
-                  padding: 0;
-                  display: block;
-                  float: left;
-                  &.left{
-                    margin-right: 10px;
-                  }
-                  &.right{
-                    margin-left: 10px;
-                  }
-                  &.yh{
-                    width: 19px;
-                    height: 18px;
-                    margin-left: 20px;
-                    margin-top: 11px;
-                    @include bg_fn(url("../img/nav-yonghu.png"), no-repeat, center, cover);
-                  }
-                }
-                .app_header_con_nav_list_ul_li_item_sp{
-                  display: block;
-                  float: left;
-                  padding-top: 13px;
-                }
-              }
-            }
-          }
-        }
-      }
       .app_header_con_title{
         padding-top: 200px;
         .app_header_con_title_text0{
@@ -181,6 +124,7 @@
       }
       .app_body1_con_box{
         position: relative;
+        z-index: 1;
         padding-top: 100px;
         .swiper-container{
           width: 1100px;

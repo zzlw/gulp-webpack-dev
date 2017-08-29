@@ -1,0 +1,278 @@
+@import "./public/reset.scss";
+@import "./public/pcStyle.scss";
+// 开发pc时请使用 pcStyle.scss 开发移动站点时请使用index.scss
+
+// 移动端
+// font_dpr rem
+
+// pc端
+// font_fn bg_fn
+.clear{
+  clear: both;
+}
+
+//start
+.app{
+  background: #f0f0f0;
+  .app_header{
+    background: #fff;
+    .app_header_con{
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .app_body0{
+    background: #f0f0f0;
+    .app_body0_con{
+      width: 1000px;
+      padding: 59px 0 0;
+      margin: 0 auto;
+      .app_body0_con_title{
+        @include font_small_head();
+        font-size: 26px;
+        color: #444;
+      }
+      .app_body0_con_titleSub{
+        @include font_small_head();
+        font-size: 14px;
+        line-height: 3;
+        color: #888;
+      }
+      .app_body0_con_box{
+        background: #fff;
+        border-radius: 10px;
+        height: 290px;
+        overflow: hidden;
+        .app_body0_con_box_nav{
+          padding: 30px 20px 30px 20px;
+          width: 660px;
+          float: right;
+          overflow: hidden;
+          .app_body0_con_box_nav_logo{
+            float: left;
+            width: 51px;
+            height: 51px;
+            @include bg_fn(url("../img/denglong.png"), no-repeat, center, cover);
+          }
+          .app_body0_con_box_nav_text{
+            padding-top: 15px;
+            // text-indent: 15px;
+            float: left;
+            @include font_disabled_text();
+            color: #000;
+          }
+          .app_body0_con_box_nav_jg{
+            float: left;
+            @include font_disabled_text();
+            color: #ff3b2c;
+            padding-top: 15px;
+            text-indent: 15px;
+          }
+          .app_body0_con_box_nav_syl{
+            float: left;
+            @include font_disabled_text();
+            color: #37b396;
+            font-size: 14px;
+            padding-top: 20px;
+            padding-top: 18px;
+            text-indent: 15px;
+          }
+          .app_body0_con_box_nav_al{
+            display: block;
+            float: right;
+            @include font_disabled_text();
+            color: #777777;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 4px 8px;
+            margin-top: 15px;
+          }
+          .app_body0_con_box_nav_ljxq{
+            display: block;
+            float: right;
+            @include font_disabled_text();
+            color: #777777;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 4px 8px;
+            margin-top: 15px;
+            margin-left: 10px;
+          }
+          .app_body0_con_box_nav_textmax{
+            @include font_disabled_text();
+            padding-top: 30px;
+            height: 80px;
+            font-size: 14px;
+            color: #aaaaaa;
+            line-height: 2;
+          }
+          .app_body0_con_box_nav_jiageBox{
+            overflow: hidden;
+            float: left;
+            margin-top: 20px;
+            .app_body0_con_box_nav_jiageBox_jiage{
+              float: left;
+              @include font_disabled_text();
+              font-size: 30px;
+              color: #ff3b2c;
+            }
+            .app_body0_con_box_nav_jiageBox_jiageSub{
+              float: left;
+              @include font_disabled_text();
+              font-size: 24px;
+              color: #c1c1c1;
+              text-decoration: line-through;
+              padding-top: 8px;
+              padding-left: 30px;
+            }
+          }
+          .app_body0_con_box_nav_ljsy{
+            display: block;
+            float: right;
+            width: 220px;
+            height: 50px;
+            @include font_disabled_text();
+            font-size: 18px;
+            color: #fff;
+            background: #ff5235;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 4px;
+            margin-top: 20px;
+          }
+        }
+        .app_body0_con_box_imgBox{
+          width: 300px;
+          float: left;
+          .app_body0_con_box_imgBox_img{
+            height: 352px;
+            @include bg_fn(url("../img/sdfsdf_03.png"), no-repeat, center, cover);
+          }
+        }
+      }
+    }
+  }
+  .app_body1{
+    padding: 30px 0 100px;
+    .app_body1_con{
+      width: 960px;
+      background: #ffffff;
+      padding: 30px 20px 120px;
+      border-radius: 10px;
+      margin: 0 auto;
+      overflow: hidden;
+      .app_body1_con_title{
+        text-align: center;
+        @include font_main_head();
+        line-height: 2;
+        font-size: 26px;
+        color: #444;
+      }
+      .app_body1_con_pre{
+        padding-top: 30px;
+        @include font_main_head();
+        font-size: 16px;
+        color: #444;
+        .app_body1_con_pre_img{
+          width: 100%;
+          height: 100%;
+          // margin: 0 auto;
+        }
+      }
+    }
+  }
+  .app_body2{
+    height: 280px;
+    background: #f9f9f9;
+    .app_body2_con{
+      width: 1200px;
+      padding-top: 10px;
+      margin: 0 auto;
+      .app_body2_con_ul{
+        width: 1000px;
+        margin: 0 auto;
+        padding: 30px 0;
+        overflow: hidden;
+        border-bottom: 1px solid #ececec;
+        .app_body2_con_ul_li{
+          float: left;
+          overflow: hidden;
+          margin-left: 40px;
+          &.text{
+            @include font_disabled_text();
+            margin-top: 8px;
+            margin-left: 0px;
+          }
+          .app_body2_con_ul_li_img{
+            float: left;
+            width: 46px;
+            height: 46px;
+            @include bg_fn( url("../img/webwxgetmsgimg.png"), no-repeat, center, cover);
+          }
+          .app_body2_con_ul_li_text{
+            display: block;
+            @include font_disabled_text();
+            float: left;
+            margin-left: 10px;
+            margin-top: 8px;
+          }
+        }
+      }
+      .app_body2_con_db{
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 10px;
+        overflow: hidden;
+        .app_body2_con_db_left{
+          float: left;
+          overflow: hidden;
+          .app_body2_con_db_left_logo{
+            float: left;
+            width: 46px;
+            height: 46px;
+            @include bg_fn( url("../img/logo-1.png"), no-repeat, center, cover);
+            margin-top: 84px;
+          }
+          .app_body2_con_db_left_text{
+            float: left;
+            @include font_help_text();
+            color: #999999;
+            margin-left: 10px;
+            margin-top: 86px;
+          }
+          .app_body2_con_db_left_erweima{
+            float: left;
+            width: 127px;
+            height: 127px;
+            @include bg_fn( url("../img/qrcode_for_gh_15b803beb30c_1280.png"), no-repeat, center, cover);
+            margin-top: 50px;
+            margin-left: 60px;
+          }
+        }
+        .app_body2_con_db_right{
+          float: left;
+          margin-top: 60px;
+          margin-left: 100px;
+          .app_body2_con_db_right_list{
+            overflow: hidden;
+            .app_body2_con_db_right_list_item{
+              float: left;
+              margin-left: 120px;
+              .app_body2_con_db_right_list_item_a{
+                display: block;
+                @include font_link_text();
+                font-size: 12px;
+                line-height: 2;
+                &:hover{
+                  text-decoration:underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

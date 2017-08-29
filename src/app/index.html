@@ -2,10 +2,11 @@
 <html lang="zh">
 <head>
 	@@include('header.inc')
+	<link rel="stylesheet" href="../css/index.css" />
 </head>
 <body>
 	<div class="app">
-	  <div class="app_header">
+		<div class="app_header">
 			<div class="app_header_con">
 				@@include('nav.inc')
 				<div class="app_header_con_title">
@@ -14,6 +15,9 @@
 				</div>
 			</div>
 	  </div>
+
+		<a id="showHere"></a>
+
 		<div class="app_body0">
 			<div class="app_body0_con">
 				<div class="app_body0_con_title">为什么选择嘟嘟H5应用中心</div>
@@ -128,9 +132,12 @@
 				@@include('foot.inc')
 			</div>
 		</div>
+		@@include('app_contactUs.inc')
 	</div>
 	<!-- 开发pc时请使用 pcIndex.js 开发移动站点时请使用index.js -->
-	<link rel="stylesheet" href="../css/index.css" />
-	<script src="../js/index.js"></script>
+	
+
+	<script src="../js/common.js"></script>
+	<script src="../js/pcIndex.js"></script>
 </body>
 </html>

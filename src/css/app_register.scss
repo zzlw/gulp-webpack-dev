@@ -1,0 +1,191 @@
+@import "./public/reset.scss";
+@import "./public/pcStyle.scss";
+@import "./public/style.scss";
+@import "./app_body2.scss";
+
+body,html{
+  overflow: auto;
+  height: 100%;
+}
+$checkedColor:#ececec;
+@mixin spa{
+  height: 36px;
+  line-height: 36px;
+  width: 204px;
+  display: inline-block;
+  float: left;
+  font-size: 12px;
+  color: #BD362F;
+  text-indent: 10px;
+  margin-top: 10px;
+  }
+.app{
+  @include bg_fn(url("../img/shouye-banner.jpg"), no-repeat, center, cover);
+  height: 750px;
+  position:relative;
+  .formWrap{
+    width:375px;
+    height:500px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-top:-238px;
+    margin-left:-190px;
+    .title{
+      margin-left: 30px;
+    }
+      .readylogin{
+        margin:17px 12px 16px 0;
+        float:right;
+        font-size: 14px;
+        color:#5a5a5a;
+        a{
+          color:#37b396;
+          text-decoration: none;
+        }
+      }
+      .logoinFrom{
+        .form-group{
+          width:600px;
+          overflow: hidden;
+          .form-control{
+            display:block;
+            width:375px;
+            height:60px;
+            border:1.5px #c0c0c0 solid;
+            outline: none;
+            text-indent: 15px;
+            &::-webkit-input-placeholder{
+              font-size: 16px;
+            }
+          }
+        }
+        .correctpho{
+          position: relative;
+          box-sizing: border-box;
+          margin:15px 0 12px 0;
+          width:375px;
+          height:37px;
+          font-size:12px;
+          text-indent: 40px;
+          color:#666666;
+          line-height: 37px;
+          border:2px solid #facccc;
+          border-radius: 5px;
+          background: #ffdbdb;
+          .icontu{
+            float:left;
+            background: url("../img/icontu.png");
+            background-size: 18px 18px;
+            width:18px;
+            height:18px;
+            position: absolute;
+            left:9px;
+            top:9px;
+          }
+        }
+        div:nth-child(1) {
+          #emali{
+            float:left;
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            border-bottom: none;
+            background:$checkedColor;
+          }
+          .spa{
+            @include spa;
+          }
+        }
+        div:nth-child(2){
+          #password{
+            float:left;
+          }
+          .spa{
+            @include spa;
+    				}
+        }
+        div:nth-child(3){
+          position:relative;
+          .authCode{
+            #phone{
+              float: left;
+              border-top: none;
+            }
+            #authCodeSend{
+              display: inline-block;
+              position: absolute;
+              left:238px;
+              top:15px;
+              width:114px;
+              height:35px;
+              background-color: #d2d2d2;
+              color:#8d8d8d;
+              text-align: center;
+              line-height: 35px;
+              border:none;
+              border-radius: 5px;
+              text-decoration: none;
+              outline: none;
+              cursor: pointer;
+            }
+          }
+          .spa{
+            @include spa;
+          }
+        }
+        div:nth-child(4){
+          #authCode{
+            float:left;
+            border-top:none;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+          }
+          .spa{
+            @include spa;
+            float:left;
+            }
+        }
+        .checkbox{
+          margin-top:15px;
+          color:#888888;
+          label{
+            display: flex;
+            input{
+              text-indent: 50px;
+              margin-right:5px;
+            }
+            a{
+              color:#37b396;
+              text-decoration: none;
+            }
+          }
+        }
+        .button{
+          margin-top:10px;
+          width:377px;
+          height:53px;
+          border:none;
+          outline: none;
+          background-color: #37b396;
+          font-size: 20px;
+          border-radius: 5px;
+        }
+        .auxiliaryWrap{
+          margin-top:20px;
+          .pull-left{
+            float: left;
+            text-decoration: none;
+            color:#888888;
+          }
+          .pull-right{
+            float:right;
+            margin-right: 18px;
+            color:#888888;
+            a{
+              color:#37b396;
+            }
+          }
+        }
+      }
+  }
+}

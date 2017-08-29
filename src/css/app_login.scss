@@ -1,0 +1,122 @@
+@import "./public/reset.scss";
+@import "./public/pcStyle.scss";
+@import "./public/style.scss";
+@import "./app_body2.scss";
+
+.clear{
+  clear: both;
+}
+body,html{
+  overflow:auto;
+  height:100%;
+}
+// @media screen and (min-height>750px){
+//   html,body{
+//     overflow: auto;
+//   }
+// }
+$checkedColor:#ececec;
+body{
+  .app{
+    @include bg_fn(url("../img/shouye-banner.jpg"), no-repeat, center, cover);
+    height: 750px;
+     position: relative;
+    .formWrap{
+      width:376px;
+      height:336px;
+      position: absolute;
+      left:50%;
+      top:50%;
+      margin-top:-168px;
+      margin-left: -188px;
+      .title{
+        margin:0 0 36px 28px;
+      }
+      form{
+        .form-group {
+          width:600px;
+          .form-control{
+            width:375px;
+            height:60px;
+            border:1px #c0c0c0 solid;
+            outline: none;
+            text-indent: 15px;
+            &::-webkit-input-placeholder{
+              font-size: 16px;
+            }
+          }
+        }
+        .form-group-top{
+          .checkedColo{
+            background: $checkedColor;
+          }
+          .form-control{
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+          }
+        }
+        .form-group-bottom {
+          .form-control{
+            border-top: none;
+            border-bottom-right-radius:5px;
+            border-bottom-left-radius:5px;
+          }
+        }
+        .checkbox{
+          margin-top:13px;
+          margin-left: 5px;
+          label{
+            color:#8f8f8f;
+            display: flex;
+            input{
+              outline: none;
+              border: none;
+              text-align: center;
+              margin-right:5px;
+            }
+          }
+        }
+        .button{
+          display: block;
+          width:377px;
+          height:48px;
+          margin-top:18px;
+          background-color: #37b396;
+          border:none;
+          border-radius: 5px;
+          font-size:16px;
+          color:#fff;
+          outline: none;
+        }
+        .auxiliaryWrap{
+          margin-top:20px;
+          width:377px;
+          height:54px;
+          .pull-left{
+            float:left;
+            color: #8f8f8f;
+            text-decoration: none;
+          }
+          .pull-right{
+            float:right;
+            margin-right: 15px;
+            span{
+                color: #8f8f8f;
+            }
+            a{
+              text-decoration: underline;
+              color:#37b396;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+  .footer{
+    width:800px;
+    height:500px;
+    position: fixed;
+  }
+}

@@ -33,11 +33,10 @@ module.exports = {
         chunkFilename: "[chunkhash].js"
     },
     resolve: {
-        alias: {
-            jquery: srcDir + "/js/lib/jquery.min.js",
-            core: srcDir + "/js/core",
-            ui: srcDir + "/js/ui"
-        }
+      alias: {
+        jquery: srcDir + "/js/lib/jquery.min.js",
+        Headhesive: srcDir + "/js/lib/headhesive.js",
+      }
     },
     plugins: [
         new CommonsChunkPlugin('common.js'),

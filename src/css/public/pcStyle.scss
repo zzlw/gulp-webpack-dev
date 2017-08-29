@@ -1,21 +1,5 @@
 //阿里图标库
 
-@font-face {
-  font-family: 'iconfontyyy';  /* project id 284616 */
-  src: url('//at.alicdn.com/t/font_eu32mjbfq5154s4i.eot');
-  src: url('//at.alicdn.com/t/font_eu32mjbfq5154s4i.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_eu32mjbfq5154s4i.woff') format('woff'),
-  url('//at.alicdn.com/t/font_eu32mjbfq5154s4i.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_eu32mjbfq5154s4i.svg#iconfont') format('svg');
-}
-
-.iconfontyyy{
-    font-family:"iconfontyyy" !important;
-    font-size:5px;font-style:normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 1px;
-    -moz-osx-font-smoothing: grayscale;
-}
 //字体使用规范
 //字体通用方法
 @mixin font_fn( $size : 12px, $color : #fff, $bold : narmal ){
@@ -67,3 +51,10 @@
 @mixin font_link_text(){    //+
   @include font_fn(14px, #222222);
 }
+
+@import "./normalize.scss";    //导航模块
+@import "./nav.scss";    //导航模块
+@import "./headhesive.scss";    //导航模块
+
+
+@import "./app_contactUs.scss";    //联系我们模块

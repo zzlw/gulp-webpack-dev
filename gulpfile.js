@@ -80,13 +80,13 @@ gulp.task('fileinclude', function (done) {
 gulp.task('sprite', ['copy:img', 'scssmin'], function (done) {
     var timestamp = +new Date();
     gulp.src('dist/css/*.css')
-        .pipe(spriter({
-            spriteSheet: 'dist/img/spritesheet' + timestamp + '.png',
-            pathToSpriteSheetFromCSS: '../img/spritesheet' + timestamp + '.png',
-            spritesmithOptions: {
-                padding: 10
-            }
-        }))
+    //     .pipe(spriter({
+    //         spriteSheet: 'dist/img/spritesheet' + timestamp + '.png',
+    //         pathToSpriteSheetFromCSS: '../img/spritesheet' + timestamp + '.png',
+    //         spritesmithOptions: {
+    //             padding: 10
+    //         }
+    //     }))
         .pipe(base64())
         .pipe(cssmin())
         .pipe(gulp.dest('dist/css'))
@@ -138,7 +138,7 @@ gulp.task("build-js", ['fileinclude'], function(callback) {
 });
 
 //发布
-gulp.task('default', ['connect', 'fileinclude', 'md5:css', 'md5:js', 'open']);
+gulp.task('default', ['copy:img', 'fileinclude', 'md5:css', 'md5:js']);
 
 //开发
 gulp.task('dev', ['connect', 'copy:img', 'fileinclude', 'scssmin', 'build-js', 'watch', 'open']);

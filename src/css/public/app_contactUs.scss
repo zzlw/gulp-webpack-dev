@@ -1,0 +1,155 @@
+.app_contactUs{
+  height: 290px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: -202px;
+  .app_contactUs_list{
+    .app_contactUs_list_item{
+      width: 88px;
+      height: 69px;
+      background: #2a2f33;
+      &.top{
+        background: #2a2f33;
+        margin-bottom: 4px;
+        border-radius: 10px 0 0 0;
+        .app_contactUs_list_item_link{
+          width: 88px;
+          height: 45px;
+          padding-top: 25px;
+          display: block;
+          text-decoration: none;
+          .app_contactUs_list_item_link_img{
+            width: 32px;
+            height: 20px;
+            margin: 0 auto;
+            @include bg_fn( url("../img/xiangshang.png"), no-repeat, center, cover);
+          }
+        }
+      }
+      &.foot{
+        border-radius: 0 0 0 10px;
+      }
+      .app_contactUs_list_item_link{
+        display: block;
+        text-decoration: none;
+        position: relative;
+        &.wx{
+          padding-top: 20px;
+          .app_contactUs_list_item_link_img{
+            width: 46px;
+            height: 38px;
+            margin: 0 auto;
+            @include bg_fn( url("../img/weixin.png"), no-repeat, center, cover);
+          }
+          .app_contactUs_list_item_link_ewmBox{
+            opacity: 0;
+            transition: all .3s;
+            width: 150px;
+            height: 180px;
+            position: absolute;
+            top: 0;
+            left: -150px;
+            background: #555;
+            .app_contactUs_list_item_link_ewmBox_imgBox{
+              padding-top: 10px;
+              .app_contactUs_list_item_link_ewmBox_imgBox_text{
+                @include font_help_text();
+                text-align: center;
+                line-height: 2;
+              }
+              .app_contactUs_list_item_link_ewmBox_imgBox_img{
+                width: 127px;
+                height: 127px;
+                margin: 0 auto;
+                @include bg_fn( url("../img/qrcode_for_gh_15b803beb30c_1280.png"), no-repeat, center, cover);
+              }
+            }
+          }
+          &:hover{
+            .app_contactUs_list_item_link_ewmBox{
+              opacity: 1;
+            }
+          }
+        }
+        &.qq{
+          padding-top: 10px;
+          .app_contactUs_list_item_link_img{
+            width: 37px;
+            height: 44px;
+            margin: 0 auto;
+            @include bg_fn( url("../img/qq.png"), no-repeat, center, cover);
+          }
+          .app_contactUs_list_item_link_ewmBox{
+            opacity: 0;
+            transition: all .3s;
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: -150px;
+            background: #555;
+            .app_contactUs_list_item_link_ewmBox_imgBox{
+              padding-top: 10px;
+              .app_contactUs_list_item_link_ewmBox_imgBox_text{
+                @include font_help_text();
+                text-align: center;
+                line-height: 2;
+                padding-bottom: 10px;
+              }
+              .app_contactUs_list_item_link_ewmBox_imgBox_img{
+                width: 37px;
+                height: 44px;
+                margin: 0 auto;
+                @include bg_fn( url("../img/qq.png"), no-repeat, center, cover);
+              }
+            }
+          }
+          &:hover{
+            .app_contactUs_list_item_link_ewmBox{
+              opacity: 1;
+            }
+          }
+        }
+        &.tel{
+          padding-top: 10px;
+          .app_contactUs_list_item_link_img{
+            width: 40px;
+            height: 41px;
+            margin: 0 auto;
+            @include bg_fn( url("../img/tel.png"), no-repeat, center, cover);
+          }
+          .app_contactUs_list_item_link_ewmBox{
+            opacity: 0;
+            transition: all .3s;
+            width: 150px;
+            height: 110px;
+            position: absolute;
+            top: 0;
+            left: -150px;
+            background: #555;
+            .app_contactUs_list_item_link_ewmBox_imgBox{
+              padding-top: 10px;
+              .app_contactUs_list_item_link_ewmBox_imgBox_text{
+                @include font_help_text();
+                text-align: center;
+                padding-bottom: 10px;
+              }
+              .app_contactUs_list_item_link_ewmBox_imgBox_img{
+                width: 40px;
+                height: 41px;
+                margin: 0 auto;
+                @include bg_fn( url("../img/tel.png"), no-repeat, center, cover);
+              }
+            }
+          }
+          &:hover{
+            .app_contactUs_list_item_link_ewmBox{
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
